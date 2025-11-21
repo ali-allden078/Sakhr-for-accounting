@@ -1,0 +1,164 @@
+/* إعدادات عامة */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #121212; /* أسود داكن جداً */
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* الهيدر - شعار صخر */
+header {
+    background-color: #000000;
+    padding: 30px 20px;
+    border-bottom: 3px solid #f39c12; /* خط برتقالي أسفل الهيدر */
+}
+
+.logo-img {
+    width: 120px; /* حجم الشعار */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #f39c12; /* اللون البرتقالي الخاص بصخر */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.slogan {
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 5px;
+}
+
+/* قسم الترحيب */
+.hero {
+    padding: 40px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #000;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* العناوين */
+.section-title {
+    margin: 40px 0 20px;
+    color: #f39c12;
+    font-size: 22px;
+    border-bottom: 1px solid #333;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* الشبكة (Grid) للكروت */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* تصميم الكرت */
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%; /* على الموبايل يأخذ العرض كامل */
+    max-width: 250px; /* أقصى عرض للكرت */
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #f39c12;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.card p {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.card-btn {
+    display: block;
+    background-color: #333;
+    color: #f39c12;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: background 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #f39c12;
+    color: #000;
+}
+
+/* تخصيص قسم الاختبارات */
+.dark-section {
+    background-color: #0d0d0d;
+    padding-bottom: 40px;
+}
+
+.card-btn.outline {
+    background-color: transparent;
+    border: 1px solid #f39c12;
+}
+
+/* الفوتر */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #000;
+    font-size: 12px;
+    color: #666;
+    border-top: 2px solid #f39c12;
+}
+
+footer a {
+    color: #888;
+    text-decoration: none;
+}
